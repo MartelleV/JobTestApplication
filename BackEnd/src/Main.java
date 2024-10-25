@@ -1,5 +1,22 @@
 public class Main {
     public static void Main(string[] args) {
-        System.out.println("Hello World!");
+        try {
+            String url = "jdbc:msql://200.210.220.1:1114/Demo";
+            Connection conn = DriverManager.getConnection(url,"","");
+            Statement stmt = conn.createStatement();
+            ResultSet rs;
+ 
+            rs = stmt.executeQuery("SELECT contact FROM cv");
+            while ( rs.next() ) {
+                String contact = rs.getString("contact");
+                System.out.println(contact);
+            }
+        conn.close();
+        }
+
+        catch (Exception e) {
+            System.err.println("Got an exception! ");
+            System.err.println(e.getMessage());
+        }
     }
 }
