@@ -63,7 +63,7 @@ require_once "header.inc"
 
                             <figure>
                                 <a href="mailto:104774503@student.swin.edu.au" target="_blank" rel="noopener" title="Email To Nguyen Hai Dang">
-                                    <img src="./images/haidang.png" alt="email-to-haidang">
+                                    <img src="./images/haidang.jpg" alt="email-to-haidang">
                                 </a>
                                 <figcaption>
                                     Nguyen Hai Dang
