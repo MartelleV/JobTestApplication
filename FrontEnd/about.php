@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-$title = "Application Form";
+$title = "About Us";
 require_once "header.inc"
 ?>
 <body>
@@ -12,11 +12,12 @@ require_once "header.inc"
     </header>
     <main>
         <article>
-            <h2>Vu Phan Hoang An - Bui Cong Minh - Nguyen Hai Dang - Nguyen Hoang Minh - Pham Quang Minh - Nguyen Chi Cuong</h2>
+            <h2>The Hawk Team</h2>
             <section id="about">
                 <h3>
                     Computer Science students from Swinburne University x FPT Alliance Program, Hanoi.
                 </h3>
+                <br><br>
             </section>
 
             <section id="group-details">

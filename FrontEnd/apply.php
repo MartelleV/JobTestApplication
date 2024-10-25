@@ -7,7 +7,7 @@
 <body>
     <?php require_once "navbar.inc"?>
     <header>
-        <h1>Start your journey with us today.</h1>
+        <h1>Apply for your desired job today!</h1>
     </header>
 
     <main>

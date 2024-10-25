@@ -11,7 +11,7 @@
         <?php require_once "navbar.inc"?>
 
         <header>
-            <h1>Homepage</h1>
+            <h1>Homepage - The Hawk Team</h1>
         </header>
 
         <main>
