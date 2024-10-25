@@ -421,7 +421,7 @@ dd {
 }
 #password, #username {
     display: block;
-    margin: auto;
+    margin: 5% auto auto auto;
 }
 #login-button {
     display: block;
@@ -430,6 +430,7 @@ dd {
 label[for=password], label[for=username] {
     font: 24px "Inter SemiBold", sans-serif;
     text-align: center;
+    margin: 5% 0 0 0;
     color: #7C72FF;
 }
 #login {
