@@ -100,7 +100,6 @@ require_once "header.inc"
         </article>
     </main>
 
-    <hr>
     <?php require_once "footer.inc"?>
 </body>
 </html>
