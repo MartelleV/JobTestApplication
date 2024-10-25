@@ -95,7 +95,7 @@ nav ul li a:hover {color: var(--glow); text-shadow: 0 0 7px var(--glow);}
     border-collapse: collapse;
     box-shadow: 0 0 14px var(--glow);
     padding: 16px;
-    margin: 16px;
+    margin: 3%;
     color: var(--text);
     text-align: center;
 }
