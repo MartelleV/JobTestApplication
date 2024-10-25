@@ -24,16 +24,16 @@ require_once "header.inc"
                         <h4>Group Bio</h4>
                         <dl>
                             <dt>Group name</dt>
-                            <dd>Edgerunners</dd>
+                            <dd>Group 2</dd>
 
                             <dt>Group ID</dt>
-                            <dd>01</dd>
+                            <dd>02</dd>
 
                             <dt>Tutor's name</dt>
-                            <dd>Dennis Nguyen</dd>
+                            <dd>Nguyen Thuy Linh</dd>
 
                             <dt>Course</dt>
-                            <dd>COS10026</dd>
+                            <dd>COS20031</dd>
                         </dl>
                     </section>
 
@@ -87,7 +87,7 @@ require_once "header.inc"
 
                             <figure>
                                 <a href="mailto:104852250@student.swin.edu.au" target="_blank" rel="noopener" title="Email To Nguyen Chi Cuong">
-                                    <img src="./images/nguyenchicuong.png" alt="email-to-nguyenchicuong">
+                                    <img src="./images/nguyenchicuong.jpg" alt="email-to-nguyenchicuong">
                                 </a>
                                 <figcaption>
                                     Nguyen Chi Cuong
