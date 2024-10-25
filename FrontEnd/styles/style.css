@@ -1,0 +1,489 @@
+/*
+filename: style.css
+author: Group 2 (COS20031); Tutorial 08:00AM
+created: Friday 25th October, 2024
+last modified: -
+description: Used by all PHP files for webpage styling. Animations included.
+*/
+
+/* Imported fonts from Google Fonts: https://fonts.google.com/. */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+
+/* STYLING FOR COMMON ELEMENTS THAT ARE SHARED BY ALL PAGES (BODY, MAIN, HEADER, FOOTER...). */
+body {background-color: #101415; animation: fadeIn 3s ease;} /* Fade-In Animation for Body. */
+header {font: 40px "PT Serif", sans-serif; color: #F4F5FA; text-align: center;}
+footer {font: italic 16px "PT Serif", sans-serif; color: #F4F5FA; text-align: center; width: 100%;}
+hr {border: none; height: 2px; background-color: #7C72FF;}
+main {font-family: "Inter", sans-serif; color: #F4F5FA;}
+/* Heading Styling. */
+h2 {font: bold 32px "PT Serif", sans-serif;}
+h3 {font-size: 24px; line-height: 28px;}
+h1, h2, h3 {margin: 12px 12px 12px 12px; text-align: center;}
+
+/* NAVIGATION BAR STYLING. */
+/* Style the Navbar Box. */
+nav {
+    border: 3px solid #7C72FF;
+    border-radius: 16px;
+    border-collapse: collapse;
+    box-shadow: 0 0 8px #7C72FF;
+    position: relative;
+    animation: slideInTop 1500ms ease; /* Slide From Top Animation for Navbar. */
+}
+/* Style the Navbar list and links. */
+nav ul {margin: 0; padding: 8px 8px; display: flex; justify-content: space-around;}
+nav ul li {display: inline; margin: auto;}
+nav ul li a {
+    font: bold 18px "DM Sans", serif;
+    color: #F4F5FA;
+    text-decoration: none;
+}
+/* Hover effect for navigation menu. */
+nav ul li a:hover {color: #7C72FF; text-shadow: 0 0 7px #7C72FF;}
+/* Logo Styling (the logo also acts as a Home button. */
+#logo {
+    width: 40px; height: 40px;
+    display: block; margin-top: auto; margin-bottom: auto;
+    border-radius: 100%;
+    opacity: 90%;
+    animation: rotation 1500ms ease; /* 360 Rotation Animation for Logo. */
+}
+#logo:hover {box-shadow: 0 0 9px #7C72FF; opacity: 100%;} /* Hover effect for company logo. */
+/* Style the Embedded Video. */
+#video {
+    border: 3px solid #7C72FF;
+    border-radius: 16px;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px #7C72FF;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    padding: 8px 8px;
+    text-align: center;
+}
+#video iframe {border: 2px solid #7C72FF; border-radius: 8px;}
+#video h3 {font-size: 30px; color: #7C72FF; text-shadow: 0 0 3px #7C72FF;}
+
+/* STYLING FOR HOMEPAGE (INDEX.PHP). */
+#quote {text-align: center; font: italic bold 30px "PT Serif", sans-serif;} /* Quote in index page. */
+#laptopman1, #laptopman2 {width: 40%; float: left;} /* Styling for images in homepage. */
+.intro-index {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+.description {
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    width: 40%;
+    clear: both;
+    text-indent: 8px;
+}
+/* Pseudo-element to style the paragraphs. */
+.description::first-letter {font-size: 27px; font-weight: bold; color: #7C72FF;}
+/* Styling and Hover effect for links in the paragraphs in index page. */
+.description > a {color: #F4F5FA; text-decoration: none; font-weight: bold;}
+.description > a:hover {color: #7C72FF;}
+
+/* STYLING FOR JOBS LIST PAGE (JOBS.PHP). */
+#jobs-list1, #jobs-list2 {display: flex; justify-content: space-around;}
+#jobs-intro {font-weight: bold; font-size: 24px; text-align: center; font-style: italic;}
+#jobs-section h3 {font-size: 30px;}
+.job-brief {font-size: 20px; line-height: 24px;}
+.job-details {
+    line-height: 16px;
+    background-color: #EDEDF5;
+    border: 3px solid #7C72FF;
+    border-radius: 16px;
+    border-collapse: collapse;
+    box-shadow: 0 0 14px #7C72FF;
+    padding: 16px;
+    margin: 16px;
+    color: #666;
+    text-align: center;
+}
+.job-details ol {list-style-type: upper-roman;}
+.job-details ul, .job-details ol {text-align: left; line-height: 20px;}
+.job-details li {margin-top: 8px; margin-bottom: 8px;}
+
+.responsibilities {display: flex; justify-content: space-between;}
+.responsibilities > .key-res {float: left; width: 50%;}
+.responsibilities > .salary {float: right;width: 50%;}
+
+.qualifications {display: flex; justify-content: space-between;}
+.qualifications > .required-q {float: left; width: 50%;}
+.qualifications > .preferable-q {float: right; width: 50%;}
+
+.salary > p {line-height: 20px;}
+h4 {font-size: 20px; line-height: 24px;}
+aside {
+    float: right;
+    width: 25%;
+    font-size: 14px;
+    border: 2px solid #7C72FF;
+    border-radius: 16px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* STYLING FOR APPLICATION (JOB ENQUIRY) PAGE (APPLY.PHP). */
+/* Style the forms. */
+#link {
+    font: bold 20px Inter, sans-serif;
+    color: #7C72FF;
+}
+#link:hover {
+    text-shadow: 0 0 2px #7C72FF;
+}
+label {
+    font: 22px "Inter Semi Bold", sans-serif;
+    display: block;
+}
+input[type="text"], input[type="email"], select, textarea {
+    background-color: #101415;
+    color: #F4F5FA;
+    border-radius: 16px;
+    font: 19px "Inter Semi Bold", sans-serif;
+    text-align: center;
+    margin: 8px 8px;
+}
+input[type="text"], input[type="email"], select {
+    height: 64px;
+    width: 320px;
+}
+textarea {
+    height: 240px;
+    width: 960px;
+}
+fieldset {margin-top: 12px; margin-bottom: 12px;}
+#main-field {
+    border: 2px solid #7C72FF;
+    box-shadow: 0 0 7px #7C72FF;
+    margin: 16px;
+    padding: 16px;
+}
+#main-legend {
+    font: bold 30px "Inter", sans-serif;
+    color: #7C72FF;
+    text-align: center;
+}
+#personal-details {
+    margin: 30px;
+    padding: 16px;
+    line-height: 24px;
+    border: 2px solid #7C72FF
+}
+.detail-legends {
+    font: bold 24px "PT Serif", serif;
+    color: #7C72FF;
+    text-align: center;
+}
+#gender-field,#skill-list, #desired-position {display: inline;}
+#professional-details {
+    margin: 30px;
+    padding: 16px;
+    line-height: 24px;
+    border: 2px solid #7C72FF;
+}
+#personal-details legend, #professional-details legend {
+    font: 25px "Inter SemiBold", sans-serif;
+    margin: 32px 16px;
+}
+/* Styling checkbox. */
+.checkboxes {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+    color: #F4F5FA;
+}
+/* Hide the browser's default checkbox. */
+.checkboxes input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox. */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #F4F5FA;
+    border-radius: 50%;
+}
+/* On mouse-over, add a grey background color. */
+.checkboxes:hover input ~ .checkmark {
+    background-color: #727272;
+}
+/* When the checkbox is checked, add a background. */
+.checkboxes input:checked ~ .checkmark {
+    background-color: #7C72FF;
+}
+/* Create the checkmark/indicator (hidden when not checked). */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked. */
+.checkboxes input:checked ~ .checkmark:after {
+    display: block;
+}
+/* Style the checkmark/indicator. */
+.checkboxes .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+/* Style the radios. */
+.radios {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+}
+/* Hide the browser's default radio button. */
+.radios input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+/* Create a custom radio button. */
+.r-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #F4F5FA;
+    border-radius: 50%;
+}
+/* On mouse-over, add a grey background color. */
+.radios:hover input ~ .r-checkmark {
+    background-color: #727272;
+}
+/* When the radio button is checked, add a blue background. */
+.radios input:checked ~ .r-checkmark {
+    background-color: #7C72FF;
+}
+/* Create the indicator (the dot/circle - hidden when not checked). */
+.r-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the indicator (dot/circle) when checked. */
+.radios input:checked ~ .r-checkmark:after {
+    display: block;
+}
+/* Style the indicator (dot/circle). */
+.radios .r-checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+/* Style the Submit (Apply) and Reset buttons. */
+.button {
+    background-color: #101415;
+    border: 2px solid #7C72FF;
+    border-radius: 16px;
+    box-shadow: 0 0 7px #7C72FF;
+    color: #F4F5FA;
+    font: 16px "Inter", sans-serif;
+    padding: 8px 8px;
+    margin-inline: 16px;
+    text-align: center;
+    width: fit-content;
+}
+/* Style the Anchor link. */
+#link {text-decoration: none; font-weight: bold;}
+#link:hover {color: #7C72FF;}
+
+/* STYLING FOR ABOUT US PAGE (ABOUT.PHP). */
+#about {text-align: center; font: italic 20px "PT Serif", serif;}
+/* Group detail section Box Styling. */
+#group-div {
+    display: flex; justify-content: space-between;
+    border: 3px solid #7C72FF;
+    border-radius: 16px;
+    border-collapse: collapse;
+    box-shadow: 0 0 7px #7C72FF;
+    padding: 16px;
+    margin: 16px;
+}
+#group-details h3 {color: #7C72FF; font-size: 30px;}
+#group-details h4 {font-size: 20px; font-weight: bold; text-align: center;}
+/* Definition list Styling. */
+dl {
+    float: left;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    row-gap: 18px;
+}
+dt {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    color: #7C72FF;
+    grid-column-start: 1;
+}
+dd {
+    font-size: 18px;
+    text-align: right;
+    margin-top: auto;
+    grid-column-start: 2;
+}
+/* Contact and Image Styling. */
+#contact div {display: flex; justify-content: space-evenly; float: right;}
+#contact img {width: 130px; border-radius: 50%;}
+#contact figure {text-align: center; font-size: 18px; margin-bottom: auto;}
+#contact img:hover {box-shadow: 0 0 12px #7C72FF;} /* Hover effect for images. */
+
+/* Table Section Styling. */
+#timetable h3 {color: #7C72FF; font-size: 30px;}
+#timetable table {text-align: center; margin: auto;}
+#timetable table, #timetable table th, #timetable table td {
+    border-collapse: collapse;
+    border: 3px solid #555;
+    line-height: 30px;
+}
+#timetable table th, #timetable table td {padding: 6px;}
+#timetable div {
+    border: 3px solid #7C72FF;
+    border-radius: 16px;
+    border-collapse: collapse;
+    box-shadow: 0 0 7px #7C72FF;
+    padding: 16px;
+    margin: 16px;
+}
+
+/* STYLING FOR ENHANCEMENTS PAGES (ENHANCEMENTS.PHP and ENHANCEMENTS2.PHP). */
+/* Box Styling. */
+.enhancement-textbox {
+    line-height: 16px;
+    background-color: #EDEDF5;
+    border: 3px solid #7C72FF;
+    border-radius: 16px;
+    border-collapse: collapse;
+    box-shadow: 0 0 14px #7C72FF;
+    padding: 16px;
+    margin: 16px;
+    color: #555555;
+    text-align: center;
+}
+/* Styling the Hyperlinks. */
+.enhancement-textbox a {text-decoration: none; font-weight: bold; color: #555555;}
+.enhancement-textbox a:hover {color: #7C72FF;}
+/* Styling the Tables and Headings. */
+.tables {text-align: center; margin: auto;}
+.tables th {line-height: 36px;}
+.tables td {line-height: 24px;}
+.tables th, .tables td {padding: 6px;}
+.tables, .tables th, .tables td {
+    border: 3px solid  #555555;
+    border-collapse: collapse;
+}
+.enhancement-textbox h3 {font: bold 28px "PT Serif", sans-serif;}
+
+
+/* STYLING FOR LOGIN PAGE (LOGIN.PHP). */
+#password {
+    background-color: #101415;
+    color: #F4F5FA;
+    border-radius: 16px;
+    font: 19px "Inter Semi Bold", sans-serif;
+    text-align: center;
+    margin: 8px 8px;
+    height: 64px;
+    width: 320px;
+}
+#password, #username {
+    display: block;
+    margin: auto;
+}
+#login-button {
+    display: block;
+    margin: 24px auto;
+}
+label[for=password], label[for=username] {
+    font: 24px "Inter SemiBold", sans-serif;
+    text-align: center;
+    color: #7C72FF;
+}
+#login {
+    background-color: #101415;
+    border: 4px #7C72FF solid;
+    border-collapse: collapse;
+    box-shadow: 0 0 24px #7C72FF;
+    margin: 16px auto;
+    border-radius: 64px;
+    width: 400px;
+}
+
+
+/* STYLING FOR MANAGER PAGE (MANAGE.PHP). */
+label[for=searchValue] {
+    text-align: center;
+    font: 25px "Inter Black", sans-serif;
+    color: #7C72FF;
+}
+#searchValue {
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 25px;
+}
+#filter-button {
+    display: block;
+    margin: 12px auto;
+}
+.mng-forms {
+    margin: 20px;
+    padding: 16px;
+    line-height: 24px;
+    border: 2px solid #7C72FF
+}
+#logout-button {
+    display: block;
+    margin: 12px auto;
+}
+#eoi-table th {
+    color: #F4F5FA;
+}
+
+
+/* KEYFRAMES (ANIMATIONS). */
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 100%;}
+}
+@keyframes slideInTop {
+    0% {transform: translateY(-100%);}
+    100% {transform: translateY(0);}
+}
+@keyframes rotation {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
