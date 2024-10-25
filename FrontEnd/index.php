@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <?php
-        $title = "Homepage";
-        require_once "header.inc"
-    ?>
+    <head>
+        <?php
+            $title = "Homepage";
+            require_once "header.inc"
+        ?>
+    </head>
 
     <body>
         <?php require_once "navbar.inc"?>
 
         <header>
-            <h1>User Profile</h1>
+            <h1>Homepage</h1>
         </header>
 
-        <main id="container">
-            <article>
-                <p>
-                    
-                </p>
-            </article>
+        <main>
         </main>
 
         <?php require_once "footer.inc"?>
