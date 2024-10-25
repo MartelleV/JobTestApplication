@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+$title = "Application Form";
+require_once "header.inc"
+?>
 <body>
     <header>
         <h1>THE AUTHORS</h1>
