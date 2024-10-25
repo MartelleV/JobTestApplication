@@ -325,7 +325,7 @@ fieldset {margin-top: 12px; margin-bottom: 12px;}
 #about {text-align: center; font: italic 20px "PT Serif", serif;}
 /* Group detail section Box Styling. */
 #group-div {
-    display: flex; justify-content: space-between;
+    display: flex; justify-content: space-around;
     border: 3px solid #7C72FF;
     border-radius: 16px;
     border-collapse: collapse;
@@ -356,9 +356,9 @@ dd {
     grid-column-start: 2;
 }
 /* Contact and Image Styling. */
-#contact div {display: flex; justify-content: space-evenly; float: right;}
-#contact img {width: 130px; border-radius: 50%;}
-#contact figure {text-align: center; font-size: 18px; margin-bottom: auto;}
+#contact div {display: flex; justify-content: space-around}
+#contact img {width: 120px; border-radius: 50%;}
+#contact figure {text-align: center; font-size: 18px; margin-bottom: auto; width: 30%;}
 #contact img:hover {box-shadow: 0 0 12px #7C72FF;} /* Hover effect for images. */
 
 /* Table Section Styling. */
