@@ -19,6 +19,7 @@ require_once "header.inc"
 
             <section id="group-details">
                 <h3>Group Details</h3>
+                <!-- Group details. -->
                 <div id="group-div">
                     <section id="group-bio">
                         <h4>Group Bio</h4>
@@ -39,6 +40,8 @@ require_once "header.inc"
 
                     <section id="contact">
                         <h4>Email Contact</h4>
+
+                        <!-- DIV 1. -->
                         <div>
                             <figure>
                                 <a href="mailto:104848725@student.swin.edu.au" target="_blank" rel="noopener" title="Email To Bui Cong Minh">
@@ -66,7 +69,10 @@ require_once "header.inc"
                                     Nguyen Hai Dang
                                 </figcaption>
                             </figure>
+                        </div>
 
+                        <!-- DIV 2. -->
+                        <div>
                             <figure>
                                 <a href="mailto:104972886@student.swin.edu.au" target="_blank" rel="noopener" title="Email To Nguyen Hoang Minh">
                                     <img src="./images/nguyenhoangminh.jpg" alt="email-to-nguyenhoangminh">
