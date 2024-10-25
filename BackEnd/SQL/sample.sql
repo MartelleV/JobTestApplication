@@ -86,7 +86,7 @@ CREATE TABLE IF NOT EXISTS application (
 CREATE TABLE IF NOT EXISTS appstatus (
     id INT AUTO_INCREMENT PRIMARY KEY,
     status BOOLEAN NOT NULL
-)
+);
 
 
 
