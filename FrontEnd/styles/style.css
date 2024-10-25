@@ -357,7 +357,7 @@ dd {
 
 /* STYLING FOR LOGIN PAGE (LOGIN.PHP). */
 #password {
-    background-color: var(--background);
+    background-color: var(--block);
     color: var(--text);
     border-radius: 16px;
     font: 19px "Inter Semi Bold", sans-serif;
