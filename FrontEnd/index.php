@@ -21,7 +21,11 @@
       <nav>
         <ul>
           <li><a href="#">Homepage</a></li>
-          <li><a href="#">Apply</a></li>
+          <li><a href="apply.html">Apply</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="job-des.html">Job Descriptions</a></li>
+          <li><a href="login.html">Log In</a></li>
+          <li><a href="logout.html">Log Out</a></li>
         </ul>
       </nav>
 
