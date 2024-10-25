@@ -1,4 +1,4 @@
 <footer>
     <hr>
-    2024. Bruh Bruh&trade;. All rights reserved.
+    2024. The Hawk Team&trade;. All rights reserved.
 </footer>

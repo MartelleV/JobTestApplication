@@ -7,7 +7,7 @@
 <body>
     <?php require_once "navbar.inc"?>
     <header>
-        <h1>Our Jobs</h1>
+        <h1>Available Jobs</h1>
     </header>
 
     <main>

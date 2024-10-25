@@ -11,7 +11,7 @@
         require_once "navbar.inc";
     ?>
     <header>
-        <h1>Manager Log In</h1>
+        <h1>User Log In</h1>
     </header>
 
     <main>
@@ -19,7 +19,7 @@
             <div>
                 <?php
                     session_start();
-                    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == TRUE) {
+                    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin']) {
                         header("location: manage.php");
                         exit;
                     }
