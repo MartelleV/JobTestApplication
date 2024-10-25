@@ -85,7 +85,7 @@ CREATE TABLE IF NOT EXISTS recommendation (
     id INT AUTO_INCREMENT PRIMARY KEY,
     cv_id INT NOT NULL,
     job_id INT NOT NULL,
-    date DATE NOT NULL,
+    date DATE NOT NULL
 );
 
 --create application
