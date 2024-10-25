@@ -5,7 +5,7 @@ $title = "Application Form";
 require_once "header.inc"
 ?>
 <body>
-    <?php require_once "nav.inc"?>
+    <?php require_once "navbar.inc"?>
     <header>
         <h1>THE AUTHORS</h1>
     </header>
