@@ -98,6 +98,6 @@ CREATE TABLE IF NOT EXISTS appstatus (
 
 
 
-INSERT INTO users (username, password) VALUES (admin, 5f4dcc3b5aa765d61d8327deb882cf99);
+INSERT INTO users (username, password) VALUES ('admin', '5f4dcc3b5aa765d61d8327deb882cf99');
 
-SELECT programming, marketting, accounting FROM users;
+SELECT programming, marketting, accounting FROM skills;
