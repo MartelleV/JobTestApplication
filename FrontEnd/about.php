@@ -28,7 +28,7 @@ require_once "header.inc"
                         <h4>Group Bio</h4>
                         <dl>
                             <dt>Group name</dt>
-                            <dd>Group 2</dd>
+                            <dd>The Hawk Team</dd>
 
                             <dt>Group ID</dt>
                             <dd>02</dd>
