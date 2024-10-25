@@ -11,12 +11,20 @@ description: Used by all PHP files for webpage styling. Animations included.
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
 
+:root {
+    --background: #F6FCDF;
+    --text: #1A1A19;
+    --glow: #31511E;
+    --footer: #72BF78;
+    --block: #A0D683;
+}
+
 /* STYLING FOR COMMON ELEMENTS åTHAT ARE SHARED BY ALL PAGES (BODY, MAIN, HEADER, FOOTER...). */
-body {background-color: #101415; animation: fadeIn 3s ease;} /* Fade-In Animation for Body. */
-header {font: 40px "PT Serif", sans-serif; color: #F4F5FA; text-align: center;}
-footer {font: italic 16px "PT Serif", sans-serif; color: #F4F5FA; text-align: center; width: 100%;}
-hr {border: none; height: 2px; background-color: #7C72FF; width: 40vw;}
-main {font-family: "Inter", sans-serif; color: #F4F5FA;}
+body {background-color: var(--background); animation: fadeIn 3s ease;} /* Fade-In Animation for Body. */
+header {font: 40px "PT Serif", sans-serif; color: var(--text); text-align: center;}
+footer {font: italic 16px "PT Serif", sans-serif; var(--text); text-align: center; width: 100%;}
+hr {border: none; height: 2px; background-color: var(--footer); width: 40vw;}
+main {font-family: "Inter", sans-serif; color: var(--text);}
 /* Heading Styling. */
 h2 {font: bold 32px "PT Serif", sans-serif;}
 h3 {font-size: 24px; line-height: 28px;}
@@ -25,10 +33,10 @@ h1, h2, h3 {margin: 12px 12px 12px 12px; text-align: center;}
 /* NAVIGATION BAR STYLING. */
 /* Style the Navbar Box. */
 nav {
-    border: 3px solid #7C72FF;
+    border: 3px solid var(--glow);
     border-radius: 16px;
     border-collapse: collapse;
-    box-shadow: 0 0 8px #7C72FF;
+    box-shadow: 0 0 8px var(--glow);
     position: relative;
     animation: slideInTop 1500ms ease; /* Slide From Top Animation for Navbar. */
 }
@@ -37,11 +45,11 @@ nav ul {margin: 0; padding: 8px 8px; display: flex; justify-content: space-aroun
 nav ul li {display: inline; margin: auto;}
 nav ul li a {
     font: bold 18px "DM Sans", serif;
-    color: #F4F5FA;
+    color: var(--text);
     text-decoration: none;
 }
 /* Hover effect for navigation menu. */
-nav ul li a:hover {color: #7C72FF; text-shadow: 0 0 7px #7C72FF;}
+nav ul li a:hover {color: var(--glow); text-shadow: 0 0 7px var(--glow);}
 /* Logo Styling (the logo also acts as a Home button. */
 #logo {
     width: 40px; height: 40px;
@@ -50,43 +58,29 @@ nav ul li a:hover {color: #7C72FF; text-shadow: 0 0 7px #7C72FF;}
     opacity: 90%;
     animation: rotation 1500ms ease; /* 360 Rotation Animation for Logo. */
 }
-#logo:hover {box-shadow: 0 0 9px #7C72FF; opacity: 100%;} /* Hover effect for company logo. */
+#logo:hover {box-shadow: 0 0 9px var(--glow); opacity: 100%;} /* Hover effect for company logo. */
 /* Style the Embedded Video. */
 #video {
-    border: 3px solid #7C72FF;
+    border: 3px solid var(--glow);
     border-radius: 16px;
     border-collapse: collapse;
-    box-shadow: 0 0 10px #7C72FF;
+    box-shadow: 0 0 10px var(--glow);
     margin-top: 80px;
     margin-bottom: 40px;
     padding: 8px 8px;
     text-align: center;
 }
-#video iframe {border: 2px solid #7C72FF; border-radius: 8px;}
-#video h3 {font-size: 30px; color: #7C72FF; text-shadow: 0 0 3px #7C72FF;}
+#video iframe {border: 2px solid var(--glow); border-radius: 8px;}
+#video h3 {font-size: 30px; color: var(--glow); text-shadow: 0 0 3px var(--glow);}
 
 /* STYLING FOR HOMEPAGE (INDEX.PHP). */
 #quote {text-align: center; font: italic bold 30px "PT Serif", sans-serif;} /* Quote in index page. */
-#laptopman1, #laptopman2 {width: 40%; float: left;} /* Styling for images in homepage. */
-.intro-index {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 5%;
-}
-.description {
-    float: left;
-    text-align: center;
-    font-size: 20px;
-    width: 40%;
-    clear: both;
-    text-indent: 8px;
-}
+
 /* Pseudo-element to style the paragraphs. */
-.description::first-letter {font-size: 27px; font-weight: bold; color: #7C72FF;}
+.description::first-letter {font-size: 27px; font-weight: bold; color: var(--glow);}
 /* Styling and Hover effect for links in the paragraphs in index page. */
-.description > a {color: #F4F5FA; text-decoration: none; font-weight: bold;}
-.description > a:hover {color: #7C72FF;}
+.description > a {color: var(--text); text-decoration: none; font-weight: bold;}
+.description > a:hover {color: var(--glow);}
 
 /* STYLING FOR JOBS LIST PAGE (JOBS.PHP). */
 #jobs-list1, #jobs-list2 {display: flex; justify-content: space-around;}
@@ -95,14 +89,14 @@ nav ul li a:hover {color: #7C72FF; text-shadow: 0 0 7px #7C72FF;}
 .job-brief {font-size: 20px; line-height: 24px;}
 .job-details {
     line-height: 16px;
-    background-color: #EDEDF5;
-    border: 3px solid #7C72FF;
+    background-color: var(--block);
+    border: 3px solid var(--glow);
     border-radius: 16px;
     border-collapse: collapse;
-    box-shadow: 0 0 14px #7C72FF;
+    box-shadow: 0 0 14px var(--glow);
     padding: 16px;
     margin: 16px;
-    color: #666;
+    color: var(--text);
     text-align: center;
 }
 .job-details ol {list-style-type: upper-roman;}
@@ -123,7 +117,7 @@ aside {
     float: right;
     width: 25%;
     font-size: 14px;
-    border: 2px solid #7C72FF;
+    border: 2px solid var(--footer);
     border-radius: 16px;
     border-collapse: collapse;
     text-align: center;
@@ -133,18 +127,18 @@ aside {
 /* Style the forms. */
 #link {
     font: bold 20px Inter, sans-serif;
-    color: #7C72FF;
+    color: var(--glow);
 }
 #link:hover {
-    text-shadow: 0 0 2px #7C72FF;
+    text-shadow: 0 0 2px var(--block);
 }
 label {
     font: 22px "Inter Semi Bold", sans-serif;
     display: block;
 }
 input[type="text"], input[type="email"], select, textarea {
-    background-color: #101415;
-    color: #F4F5FA;
+    background-color: var(--block);
+    color: var(--text);
     border-radius: 16px;
     font: 19px "Inter Semi Bold", sans-serif;
     text-align: center;
@@ -160,25 +154,25 @@ textarea {
 }
 fieldset {margin-top: 12px; margin-bottom: 12px;}
 #main-field {
-    border: 2px solid #7C72FF;
-    box-shadow: 0 0 7px #7C72FF;
+    border: 2px solid var(--glow);
+    box-shadow: 0 0 7px var(--glow);
     margin: 16px;
     padding: 16px;
 }
 #main-legend {
     font: bold 30px "Inter", sans-serif;
-    color: #7C72FF;
+    color: var(--glow);
     text-align: center;
 }
 #personal-details {
     margin: 30px;
     padding: 16px;
     line-height: 24px;
-    border: 2px solid #7C72FF
+    border: 2px solid var(--glow);
 }
 .detail-legends {
     font: bold 24px "PT Serif", serif;
-    color: #7C72FF;
+    color: var(--text);
     text-align: center;
 }
 #gender-field,#skill-list, #desired-position {display: inline;}
@@ -186,7 +180,7 @@ fieldset {margin-top: 12px; margin-bottom: 12px;}
     margin: 30px;
     padding: 16px;
     line-height: 24px;
-    border: 2px solid #7C72FF;
+    border: 2px solid var(--glow);
 }
 #personal-details legend, #professional-details legend {
     font: 25px "Inter SemiBold", sans-serif;
@@ -202,7 +196,7 @@ fieldset {margin-top: 12px; margin-bottom: 12px;}
     cursor: pointer;
     font-size: 22px;
     user-select: none;
-    color: #F4F5FA;
+    color: var(--text);
 }
 /* Hide the browser's default checkbox. */
 .checkboxes input {
@@ -228,7 +222,7 @@ fieldset {margin-top: 12px; margin-bottom: 12px;}
 }
 /* When the checkbox is checked, add a background. */
 .checkboxes input:checked ~ .checkmark {
-    background-color: #7C72FF;
+    background-color: var(--footer);
 }
 /* Create the checkmark/indicator (hidden when not checked). */
 .checkmark:after {
@@ -283,7 +277,7 @@ fieldset {margin-top: 12px; margin-bottom: 12px;}
 }
 /* When the radio button is checked, add a blue background. */
 .radios input:checked ~ .r-checkmark {
-    background-color: #7C72FF;
+    background-color: var(--footer);
 }
 /* Create the indicator (the dot/circle - hidden when not checked). */
 .r-checkmark:after {
@@ -306,11 +300,11 @@ fieldset {margin-top: 12px; margin-bottom: 12px;}
 }
 /* Style the Submit (Apply) and Reset buttons. */
 .button {
-    background-color: #101415;
-    border: 2px solid #7C72FF;
+    background-color: var(--background);
+    border: 2px solid var(--glow);
     border-radius: 16px;
-    box-shadow: 0 0 7px #7C72FF;
-    color: #F4F5FA;
+    box-shadow: 0 0 7px var(--glow);
+    color: var(--text);
     font: 16px "Inter", sans-serif;
     padding: 8px 8px;
     margin-inline: 16px;
@@ -319,21 +313,21 @@ fieldset {margin-top: 12px; margin-bottom: 12px;}
 }
 /* Style the Anchor link. */
 #link {text-decoration: none; font-weight: bold;}
-#link:hover {color: #7C72FF;}
+#link:hover {color: var(--footer);}
 
 /* STYLING FOR ABOUT US PAGE (ABOUT.PHP). */
 #about {text-align: center; font: italic 20px "PT Serif", serif;}
 /* Group detail section Box Styling. */
 #group-div {
     display: flex; justify-content: space-around;
-    border: 3px solid #7C72FF;
+    border: 3px solid var(--glow);
     border-radius: 16px;
     border-collapse: collapse;
-    box-shadow: 0 0 7px #7C72FF;
+    box-shadow: 0 0 7px var(--glow);
     padding: 16px;
     margin: 16px;
 }
-#group-details h3 {color: #7C72FF; font-size: 30px;}
+#group-details h3 {color: var(--text); font-size: 30px;}
 #group-details h4 {font-size: 20px; font-weight: bold; text-align: center;}
 /* Definition list Styling. */
 dl {
@@ -346,7 +340,7 @@ dt {
     text-align: left;
     font-weight: bold;
     font-size: 20px;
-    color: #7C72FF;
+    color: var(--text);
     grid-column-start: 1;
 }
 dd {
@@ -359,59 +353,12 @@ dd {
 #contact div {display: flex; justify-content: space-around}
 #contact img {width: 120px; border-radius: 50%;}
 #contact figure {text-align: center; font-size: 18px; margin-bottom: auto; width: 30%;}
-#contact img:hover {box-shadow: 0 0 12px #7C72FF;} /* Hover effect for images. */
-
-/* Table Section Styling. */
-#timetable h3 {color: #7C72FF; font-size: 30px;}
-#timetable table {text-align: center; margin: auto;}
-#timetable table, #timetable table th, #timetable table td {
-    border-collapse: collapse;
-    border: 3px solid #555;
-    line-height: 30px;
-}
-#timetable table th, #timetable table td {padding: 6px;}
-#timetable div {
-    border: 3px solid #7C72FF;
-    border-radius: 16px;
-    border-collapse: collapse;
-    box-shadow: 0 0 7px #7C72FF;
-    padding: 16px;
-    margin: 16px;
-}
-
-/* STYLING FOR ENHANCEMENTS PAGES (ENHANCEMENTS.PHP and ENHANCEMENTS2.PHP). */
-/* Box Styling. */
-.enhancement-textbox {
-    line-height: 16px;
-    background-color: #EDEDF5;
-    border: 3px solid #7C72FF;
-    border-radius: 16px;
-    border-collapse: collapse;
-    box-shadow: 0 0 14px #7C72FF;
-    padding: 16px;
-    margin: 16px;
-    color: #555555;
-    text-align: center;
-}
-/* Styling the Hyperlinks. */
-.enhancement-textbox a {text-decoration: none; font-weight: bold; color: #555555;}
-.enhancement-textbox a:hover {color: #7C72FF;}
-/* Styling the Tables and Headings. */
-.tables {text-align: center; margin: auto;}
-.tables th {line-height: 36px;}
-.tables td {line-height: 24px;}
-.tables th, .tables td {padding: 6px;}
-.tables, .tables th, .tables td {
-    border: 3px solid  #555555;
-    border-collapse: collapse;
-}
-.enhancement-textbox h3 {font: bold 28px "PT Serif", sans-serif;}
-
+#contact img:hover {box-shadow: 0 0 12px var(--glow);} /* Hover effect for images. */
 
 /* STYLING FOR LOGIN PAGE (LOGIN.PHP). */
 #password {
-    background-color: #101415;
-    color: #F4F5FA;
+    background-color: var(--background);
+    color: var(--text);
     border-radius: 16px;
     font: 19px "Inter Semi Bold", sans-serif;
     text-align: center;
@@ -430,49 +377,17 @@ dd {
 label[for=password], label[for=username] {
     font: 24px "Inter SemiBold", sans-serif;
     text-align: center;
-    color: #7C72FF;
+    color: var(--glow);
 }
 #login {
-    background-color: #101415;
-    border: 4px #7C72FF solid;
+    background-color: var(--background);
+    border: 4px var(--glow) solid;
     border-collapse: collapse;
-    box-shadow: 0 0 24px #7C72FF;
+    box-shadow: 0 0 24px var(--glow);
     margin: 16px auto;
     border-radius: 64px;
     width: 400px;
 }
-
-
-/* STYLING FOR MANAGER PAGE (MANAGE.PHP). */
-label[for=searchValue] {
-    text-align: center;
-    font: 25px "Inter Black", sans-serif;
-    color: #7C72FF;
-}
-#searchValue {
-    display: block;
-    margin: auto;
-    width: 400px;
-    height: 25px;
-}
-#filter-button {
-    display: block;
-    margin: 12px auto;
-}
-.mng-forms {
-    margin: 20px;
-    padding: 16px;
-    line-height: 24px;
-    border: 2px solid #7C72FF
-}
-#logout-button {
-    display: block;
-    margin: 12px auto;
-}
-#eoi-table th {
-    color: #F4F5FA;
-}
-
 
 /* KEYFRAMES (ANIMATIONS). */
 @keyframes fadeIn {

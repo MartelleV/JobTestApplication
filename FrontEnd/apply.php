@@ -13,7 +13,7 @@
     <main>
         <article>
             <h2>Please fill in your information in this form to apply for your desired position.</h2>
-            <form method="post" action="processEOI.php">
+            <form method="post" action="index.php">
                 <fieldset id="main-field">
                     <legend id="main-legend">APPLICATION FORM</legend>
 
@@ -88,7 +88,7 @@
                     <fieldset id="professional-details">
                         <legend class="detail-legends">PROFESSIONAL DETAILS</legend>
                         <p>
-                            N.B.: Go <a href="jobs.php" target="_blank" rel="noopener" id="link" title="Job List">here</a> for detailed job requirements and description.
+                            N.B.: Go <a href="job-des.php" target="_blank" rel="noopener" id="link" title="Job List">here</a> for detailed job requirements and description.
                         </p>
                         <fieldset id="desired-position">
                             <legend>Your Desired Position</legend>
@@ -246,8 +246,6 @@
             </form>
         </article>
     </main>
-
-    <hr>
 
     <?php require_once "footer.inc"?>
 </body>
