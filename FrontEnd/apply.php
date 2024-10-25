@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-    $title = "InnoEdging Systems: Application Form";
+    $title = "Application Form";
     require_once "header.inc"
 ?>
 <body>
@@ -248,8 +248,7 @@
     </main>
 
     <hr>
-    <footer>
-        2024. InnoEdging Systems&trade;. All rights reserved.
-    </footer>
+
+    <?php require_once "footer.inc"?>
 </body>
 </html>

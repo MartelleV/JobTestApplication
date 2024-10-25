@@ -6,11 +6,10 @@
     </header>
     <main>
         <article>
-            <h2>Vu Phan Hoang An - Bui Cong Minh - Nguyen Hai Dang</h2>
+            <h2>Vu Phan Hoang An - Bui Cong Minh - Nguyen Hai Dang - Nguyen Hoang Minh - Pham Quang Minh - Nguyen Chi Cuong</h2>
             <section id="about">
                 <h3>
-                    Computer Science bros from Swinburne University x FPT Alliance Program, Hanoi.
-                    Our passion is, of course, coding! This is our first webpage project, hope you enjoy it!
+                    Computer Science students from Swinburne University x FPT Alliance Program, Hanoi.
                 </h3>
             </section>
 
@@ -38,8 +37,8 @@
                         <h4>Email Contact</h4>
                         <div>
                             <figure>
-                                <a href="mailto:minhbui05.hn@gmail.com" target="_blank" rel="noopener" title="Email To Bui Cong Minh">
-                                    <img src="images/buicongminh.png" alt="email-to-buicongminh">
+                                <a href="mailto:104848725@student.swin.edu.au" target="_blank" rel="noopener" title="Email To Bui Cong Minh">
+                                    <img src="./images/buicongminh.png" alt="email-to-buicongminh">
                                 </a>
                                 <figcaption>
                                     Bui Cong Minh
@@ -47,8 +46,8 @@
                             </figure>
 
                             <figure>
-                                <a href="mailto:vuphanhoangan2005@gmail.com" target="_blank" rel="noopener" title="Email To Vu Phan Hoang An">
-                                    <img src="images/hoangan.jpg" alt="email-to-hoangan">
+                                <a href="mailto:104775412@student.swin.edu.au" target="_blank" rel="noopener" title="Email To Vu Phan Hoang An">
+                                    <img src="./images/hoangan.jpg" alt="email-to-hoangan">
                                 </a>
                                 <figcaption>
                                     Vu Phan Hoang An
@@ -56,63 +55,48 @@
                             </figure>
 
                             <figure>
-                                <a href="mailto:dang0545120205@gmail.com" target="_blank" rel="noopener" title="Email To Nguyen Hai Dang">
-                                    <img src="images/haidang.png" alt="email-to-haidang">
+                                <a href="mailto:104774503@student.swin.edu.au" target="_blank" rel="noopener" title="Email To Nguyen Hai Dang">
+                                    <img src="./images/haidang.png" alt="email-to-haidang">
                                 </a>
                                 <figcaption>
                                     Nguyen Hai Dang
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <a href="mailto:104972886@student.swin.edu.au" target="_blank" rel="noopener" title="Email To Nguyen Hoang Minh">
+                                    <img src="./images/nguyenhoangminh.png" alt="email-to-nguyenhoangminh">
+                                </a>
+                                <figcaption>
+                                    Nguyen Hoang Minh
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <a href="mailto:104999568@student.swin.edu.au" target="_blank" rel="noopener" title="Email To Pham Quang Minh">
+                                    <img src="./images/phamquangminh.png" alt="email-to-phamquangminh">
+                                </a>
+                                <figcaption>
+                                    Pham Quang Minh
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <a href="mailto:104852250@student.swin.edu.au" target="_blank" rel="noopener" title="Email To Nguyen Chi Cuong">
+                                    <img src="./images/nguyenchicuong.png" alt="email-to-nguyenchicuong">
+                                </a>
+                                <figcaption>
+                                    Nguyen Chi Cuong
                                 </figcaption>
                             </figure>
                         </div>
                     </section>
                 </div>
             </section>
-
-            <section id="timetable">
-                <h3>Our Timetable</h3>
-                <div>
-                    <table>
-                        <tr>
-                            <th></th>
-                            <th>Monday</th>
-                            <th>Tuesday</th>
-                            <th>Wednesday</th>
-                            <th>Thursday</th>
-                            <th>Friday</th>
-                        </tr>
-                        <tr>
-                            <th>8:00 AM - 11:00 AM</th>
-                            <td></td>
-                            <td>Web Development (COS10005)</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th>8:00 AM - 12:00 PM</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>Computing Technology Inquiry Project (COS10026)</td>
-                        </tr>
-                        <tr>
-                            <th>1:00 PM - 5:00 PM</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>Networks and Switching (TNE10006)</td>
-                        </tr>
-                    </table>
-                </div>
-            </section>
         </article>
     </main>
 
     <hr>
-    <footer>
-        2024. InnoEdging Systems&trade;. All rights reserved.
-    </footer>
+    <?php require_once "footer.inc"?>
 </body>
 </html>

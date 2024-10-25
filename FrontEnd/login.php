@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <?php
-        $title = "Manager Log-in";
+        $title = "User Log-in";
         require_once "header.inc";
     ?>
 </head>

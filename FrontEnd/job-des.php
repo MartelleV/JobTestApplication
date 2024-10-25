@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-    $title = "InnoEdging Systems: Jobs List";
+    $title = "Jobs List";
     require_once "header.inc";
 ?>
 <body>
