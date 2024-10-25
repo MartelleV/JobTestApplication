@@ -37,13 +37,13 @@ CREATE TABLE IF NOT EXISTS recruiters (
 --create job posting table
 CREATE TABLE IF NOT EXISTS jobposting (
     author VARCHAR(64) NOT NULL,
-    key VARCHAR (255) NOT NULL,
+    key_id VARCHAR (255) NOT NULL,
 );
 
 --create jobdesc table
 CREATE TABLE IF NOT EXISTS jobdescriptions (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    key VARCHAR(255) NOT NULL,
+    key_id VARCHAR(255) NOT NULL,
     status BOOLEAN NOT NULL,
     payout VARCHAR(32) NOT NULL,
 );
@@ -86,7 +86,7 @@ CREATE TABLE IF NOT EXISTS recommendation (
     cv_id INT NOT NULL,
     job_id INT NOT NULL,
     date DATE NOT NULL,
-)
+);
 
 --create application
 CREATE TABLE IF NOT EXISTS application (
