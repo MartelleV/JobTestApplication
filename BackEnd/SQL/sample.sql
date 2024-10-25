@@ -7,12 +7,6 @@ CREATE DATABASE IF NOT EXISTS jobapplication;
 
 USE jobapplication;
 
-CREATE TABLE IF NOT EXISTS users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(32) NOT NULL,
-    password VARCHAR(255) NOT NULL
-);
-
 
 
 
@@ -22,6 +16,12 @@ CREATE TABLE IF NOT EXISTS users (
 
 
 
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(32) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
 
 CREATE TABLE IF NOT EXISTS recruiters (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -98,4 +98,6 @@ CREATE TABLE IF NOT EXISTS appstatus (
 
 
 
-INSERT INTO users (id, username, password) VALUES ();
+INSERT INTO users (username, password) VALUES (admin, 5f4dcc3b5aa765d61d8327deb882cf99);
+
+SELECT programming, marketting, accounting FROM users;
