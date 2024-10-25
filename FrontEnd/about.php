@@ -69,7 +69,7 @@ require_once "header.inc"
 
                             <figure>
                                 <a href="mailto:104972886@student.swin.edu.au" target="_blank" rel="noopener" title="Email To Nguyen Hoang Minh">
-                                    <img src="./images/nguyenhoangminh.png" alt="email-to-nguyenhoangminh">
+                                    <img src="./images/nguyenhoangminh.jpg" alt="email-to-nguyenhoangminh">
                                 </a>
                                 <figcaption>
                                     Nguyen Hoang Minh
@@ -78,7 +78,7 @@ require_once "header.inc"
 
                             <figure>
                                 <a href="mailto:104999568@student.swin.edu.au" target="_blank" rel="noopener" title="Email To Pham Quang Minh">
-                                    <img src="./images/phamquangminh.png" alt="email-to-phamquangminh">
+                                    <img src="./images/phamquangminh.jpg" alt="email-to-phamquangminh">
                                 </a>
                                 <figcaption>
                                     Pham Quang Minh
