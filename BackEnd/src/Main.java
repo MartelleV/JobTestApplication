@@ -1,5 +1,10 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
 public class Main {
-    public static void Main(string[] args) {
+    public static void Main(String[] args) {
         try {
             String url = "jdbc:msql://200.210.220.1:1114/Demo";
             Connection conn = DriverManager.getConnection(url,"","");
