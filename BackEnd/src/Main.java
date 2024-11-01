@@ -6,7 +6,7 @@ public class Main {
             Statement stmt = conn.createStatement();
             ResultSet rs;
  
-            rs = stmt.executeQuery("SELECT contact FROM cv");
+            rs = stmt.executeQuery("SELECT * FROM users;");
             while ( rs.next() ) {
                 String contact = rs.getString("contact");
                 System.out.println(contact);
