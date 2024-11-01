@@ -95,7 +95,7 @@ nav ul li a:hover {color: var(--glow); text-shadow: 0 0 7px var(--glow);}
     border-collapse: collapse;
     box-shadow: 0 0 14px var(--glow);
     padding: 16px;
-    margin: 16px;
+    margin: 3%;
     color: var(--text);
     text-align: center;
 }
@@ -357,7 +357,7 @@ dd {
 
 /* STYLING FOR LOGIN PAGE (LOGIN.PHP). */
 #password {
-    background-color: var(--background);
+    background-color: var(--block);
     color: var(--text);
     border-radius: 16px;
     font: 19px "Inter Semi Bold", sans-serif;
